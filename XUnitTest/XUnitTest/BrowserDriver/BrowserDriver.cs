@@ -18,7 +18,8 @@ namespace TeamChallenge.BrowserDriver
         {
             if (browser.Equals("Chrome"))
             {
-                string _chromeDriverPath = @"D:\Users\I81387\Documents\TeamChallengeGIT\TeamChallenge\XUnitTest\XUnitTest\Resources\";
+                //string _chromeDriverPath = @"D:\Users\I81387\Documents\TeamChallengeGIT\TeamChallenge\XUnitTest\XUnitTest\Resources\";
+                string _chromeDriverPath = "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/Resources/";
                 webDriver = new ChromeDriver(_chromeDriverPath);
                 return webDriver;
             }
