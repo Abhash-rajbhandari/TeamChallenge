@@ -9,10 +9,12 @@ namespace TeamChallenge.PageObjects
     class HomePage
     {
         private IWebDriver driver;
+
+         
         public HomePage()
         {
             this.driver = BrowserDriver.BrowserDriver.GetWebDriver();
-            PageFactory.InitElements(driver, this);
+            //PageFactory.InitElements(driver, this);
         }
     }
 }

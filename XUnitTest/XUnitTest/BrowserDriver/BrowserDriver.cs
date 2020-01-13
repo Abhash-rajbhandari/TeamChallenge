@@ -18,14 +18,14 @@ namespace TeamChallenge.BrowserDriver
         {
             if (browser.Equals("Chrome"))
             {
-                string _chromeDriverPath = @"C:\Users\rajbh\source\repos\XUnitTest\XUnitTest\Resources";
+                string _chromeDriverPath = @"D:\Users\I81387\Documents\TeamChallengeGIT\TeamChallenge\XUnitTest\XUnitTest\Resources\";
                 webDriver = new ChromeDriver(_chromeDriverPath);
                 return webDriver;
             }
             //Default Browser1
             else
             {
-                string _chromeDriverPath = @"C:\Users\rajbh\source\repos\XUnitTest\XUnitTest\Resources\";
+                string _chromeDriverPath = @"D:\Users\I81387\Documents\TeamChallengeGIT\TeamChallenge\XUnitTest\XUnitTest\Resources";
                 webDriver = new ChromeDriver(_chromeDriverPath);
                 return webDriver;
             }
