@@ -10,11 +10,17 @@ namespace TeamChallenge.PageObjects
     {
         private IWebDriver driver;
 
-         
+        private IWebElement DocumentationButton => driver.FindElement(By.XPath("//li[@id='menu-item-642']"));
+        
         public HomePage()
         {
             this.driver = BrowserDriver.BrowserDriver.GetWebDriver();
             //PageFactory.InitElements(driver, this);
+        }
+
+
+        public void ClickDocumentationPage(){
+            DocumentationButton.Click();
         }
     }
 }
