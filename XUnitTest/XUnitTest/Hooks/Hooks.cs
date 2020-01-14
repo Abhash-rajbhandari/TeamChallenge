@@ -16,7 +16,7 @@ namespace TeamChallenge.Hooks
         {
             Console.WriteLine("Hooks Before Class");
             IWebDriver wd = BrowserDriver.BrowserDriver.LaunchBrowser();
-            BrowserDriver.BrowserDriver.Open("http://go.specflow.org/doc-hooks");
+            BrowserDriver.BrowserDriver.Open("http://hamrobazar.com");
             
             
 
