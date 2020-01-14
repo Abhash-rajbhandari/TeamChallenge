@@ -11,8 +11,6 @@ namespace TeamChallenge.PageObjects
     {
         private IWebDriver driver;
 
-        private IWebElement DocumentationButton => driver.FindElement(By.XPath("//li[@id='menu-item-642']"));
-
         private IWebElement OpenLoginUIButton => driver.FindElement(By.XPath(""));
 
         private IWebElement EmailAddressBox => driver.FindElement(By.XPath(""));
