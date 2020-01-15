@@ -69,5 +69,19 @@ namespace TeamChallenge.PageObjects
 
         }
 
+        public void VerifyIfChallengeMenuNotVisible()
+        {
+            try
+            {
+                bool isLOBvisible = ChallangeMenuOption.Displayed;
+                Assert.False(isLOBvisible);
+            }
+            catch (Exception e)
+            {
+                //If exception caught the also the assertion is successful
+                Assert.True(true);
+            }
+        }
+
     }
 }

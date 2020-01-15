@@ -29,6 +29,7 @@ namespace TeamChallenge.BrowserDriver
             else if (browser.Equals("InternetExplorer"))
             {
                 string _IEDriverPath = @"C:\Users\rajbh\Documents\TeamChallenge\TeamChallenge\XUnitTest\XUnitTest\Resources\";
+        
                 webDriver = new InternetExplorerDriver(_IEDriverPath);
                 webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(300);
                 return webDriver;

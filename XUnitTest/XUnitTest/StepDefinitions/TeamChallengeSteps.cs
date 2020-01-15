@@ -9,6 +9,9 @@ namespace TeamChallenge.StepDefinitions
     {
         ChallengePage challengePg = new ChallengePage();
         LoginPage loginPg = new LoginPage();
+        CreateChallengePage createChallengePg = new CreateChallengePage();
+        ViewChallengePage viewChallengePg = new ViewChallengePage();
+
         [Given(@"I am a Super user and I log into the motion portal")]
         public void GivenIAmASuperUserAndILogIntoTheMotionPortal()
         {
@@ -89,6 +92,36 @@ namespace TeamChallenge.StepDefinitions
         public void GivenIAmAClientAdminAndILogIntoTheMotionPortal()
         {
             loginPg.logintoPortal("", "");
+        }
+
+        [Given(@"I am a GroupAdmin and I log into the motion portal")]
+        public void GivenIAmAGroupAdminAndILogIntoTheMotionPortal()
+        {
+            loginPg.logintoPortal("", "");
+        }
+
+        [Then(@"I do not see LOB column on View Challenges page\.")]
+        public void ThenIDoNotSeeLOBColumnOnViewChallengesPage_()
+        {
+            viewChallengePg.verifyLOBcolumnNotPresent();
+        }
+
+        [Then(@"I do not see row for LOB\.")]
+        public void ThenIDoNotSeeRowForLOB_()
+        {
+            createChallengePg.verifyLOBcolumnNotPresent();
+        }
+
+        [Given(@"I am a member and I log into the motion portal")]
+        public void GivenIAmAMemberAndILogIntoTheMotionPortal()
+        {
+            loginPg.logintoPortal("", "");
+        }
+
+        [Then(@"I do not see Challenges  on the left tool bar\.")]
+        public void ThenIDoNotSeeChallengesOnTheLeftToolBar_()
+        {
+            challengePg.VerifyIfChallengeMenuNotVisible();
         }
 
 
