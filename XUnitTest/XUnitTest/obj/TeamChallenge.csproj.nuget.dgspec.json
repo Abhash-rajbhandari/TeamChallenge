@@ -1,32 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/TeamChallenge.csproj": {}
+    "C:\\Users\\rajbh\\Documents\\TeamChallenge\\TeamChallenge\\XUnitTest\\XUnitTest\\TeamChallenge.csproj": {}
   },
   "projects": {
-    "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/TeamChallenge.csproj": {
+    "C:\\Users\\rajbh\\Documents\\TeamChallenge\\TeamChallenge\\XUnitTest\\XUnitTest\\TeamChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/TeamChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\rajbh\\Documents\\TeamChallenge\\TeamChallenge\\XUnitTest\\XUnitTest\\TeamChallenge.csproj",
         "projectName": "TeamChallenge",
-        "projectPath": "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/TeamChallenge.csproj",
-        "packagesPath": "/Users/i81387/.nuget/packages/",
-        "outputPath": "/Users/i81387/VSCodeTeamChallengeProj/TeamChallenge/XUnitTest/XUnitTest/obj/",
+        "projectPath": "C:\\Users\\rajbh\\Documents\\TeamChallenge\\TeamChallenge\\XUnitTest\\XUnitTest\\TeamChallenge.csproj",
+        "packagesPath": "C:\\Users\\rajbh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rajbh\\Documents\\TeamChallenge\\TeamChallenge\\XUnitTest\\XUnitTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/i81387/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rajbh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -37,17 +36,11 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
             },
             "Selenium.Support": {
               "target": "Package",
@@ -102,7 +95,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
